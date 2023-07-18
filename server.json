@@ -1,0 +1,22 @@
+[
+  {
+    "ParameterKey": "StackName",
+    "ParameterValue": "UdacityProject2"
+  },
+  {
+    "ParameterKey": "AMItoUse",
+    "ParameterValue": "ami-366105943227"
+  },
+  {
+    "ParameterKey": "KeyPair",
+    "ParameterValue": " udacity-project-2"
+  },
+  {
+    "ParameterKey": "S3Bucket",
+    "ParameterValue": "mybucket366105943227"
+  },
+  {
+    "ParameterKey": "InstanceType",
+    "ParameterValue": "t3.medium"
+  }
+]
