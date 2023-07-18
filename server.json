@@ -5,11 +5,11 @@
   },
   {
     "ParameterKey": "AMItoUse",
-    "ParameterValue": "ami-366105943227"
+    "ParameterValue": "ami-00ddb0e5626798373"
   },
   {
     "ParameterKey": "KeyPair",
-    "ParameterValue": " udacity-project-2"
+    "ParameterValue": "udacity-project-2"
   },
   {
     "ParameterKey": "S3Bucket",
