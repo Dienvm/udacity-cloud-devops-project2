@@ -38,12 +38,11 @@ Resources:
             Statement:
               - Effect: "Allow"
                 Action:
-                  - s3:GetObject
+                  - "s3:GetObject"
+                  - "s3:ListBucket"
                 Resource:
-                  - !Join
-                    - ""
-                    - - "arn:aws:s3:::"
-                      - !Ref S3Bucket
+                  - "arn:aws:s3:::mybucket366105943227"
+                  - "arn:aws:s3:::mybucket366105943227/*"
 
   RootInstanceProfile:
     Type: "AWS::IAM::InstanceProfile"
@@ -102,7 +101,7 @@ Resources:
           cd /var/www/html
           sudo aws s3api get-object --bucket ${S3Bucket} --key index.html index.html
       ImageId: !Ref AMItoUse
-      IamInstanceProfile: !GetAtt RootInstanceProfile.Arn
+      IamInstanceProfile: !Ref RootInstanceProfile
       KeyName: !Ref KeyPair
       SecurityGroups:
         - Ref: WebServerSecGroup
